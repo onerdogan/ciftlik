@@ -1,52 +1,82 @@
-*
+:root{
+    --colorm:#BDADAD;
+    --colorh:#9DD15D;
+    --colort:#DC813F;
+    --colorl:#551A8B;
+    --coloram:#CDF0EA;
+}
 body,html{
     margin: 10px 40px;
     text-align: center;
+    color: #551A8B;
 }
 *{
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     text-decoration: none;
+   
 }
 .koyunVideo{
     text-align: center;
-    background-color: aquamarine;
+    background-color: var(--colorh);
+}
+section{
+    border-radius: 5px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 2rem;
 }
 .title{
     text-align: center;
-    color: green;
-    background-color: rgb(125, 239, 125);
+    
+    background-color: var(--colort);
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.title::before{
+    content: "🍀";
+}
+.title::after{
+    content: "🍀";
+}
 .titleHayvan{
     text-decoration: none;
     font-size: xx-large;
-    color: brown;
+    
     font-weight: bold;
     background-color: rgb(189, 173, 173);
     text-align: center;
     width: 100%;
     margin-bottom: 30px;
+    margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .hayvanlar{
     font-weight:100;
     font-size: 20px;
-    color:darkblue;
+    border-radius: 5px;
     text-align: center;
     column-width: 200px;
+    background-color: #551A8B;
+    
     
 }
-.hayvanlar:hover{
-    background-color: aquamarine;
+button a{
+    color: var(--coloram);
+}
+button a:hover{
+    color: var(--colorh);
 }
 .urunler{
     font-weight: 100;
     font-size: 20px;
-    color:darkmagenta;
+    
     width: 100%;
     text-align: center;
     
@@ -55,7 +85,7 @@ body,html{
 }
 .titleTarim{
     font-size: xx-large;
-    color: brown;
+   
     font-weight: bold;
     background-color: rgb(157, 209, 93);
     text-align: center;
@@ -65,9 +95,10 @@ body,html{
     padding-bottom: 20px;
 
 }
+
 .titleAraclar{
     font-size: xx-large;
-    color: brown;
+  
     font-weight: bold;
     background-color: rgb(220, 129, 63);
     text-align: center;
@@ -86,3 +117,73 @@ button.girisButton{
     width: 200px;
     background-color: aliceblue;
 }
+.kedicik{
+    display: none;
+}
+.kedicikBaslik :hover  kedicik{
+    display: blok;
+}
+.table thead tr th{
+    column-width: 30px;
+    
+}
+.table{
+   font-size: x-large;
+   width: 50%;
+    text-align: center;
+    margin: 5rem auto;
+   padding: 1rem;
+   
+}
+.table thead  tr:nth-child(odd){
+    background-color: #9DD15D;
+    color: #551A8B;
+    font-size: xx-large;
+    text-transform: capitalize;
+
+ }
+ .table thead  tr:nth-child(even){
+    background-color: #BDADAD;
+    color: #551A8B;
+    font-size: x-large;
+ }
+ .table tbody  tr:nth-child(odd){
+    background-color: aquamarine;
+}
+.table tbody  tr:nth-child(3n+1){
+    background-color:crimson;
+}
+.pHayvan::first-letter{
+    font-size: 3rem;
+}
+yagmur{
+    display:none;
+}
+.yagmur:checked .content{
+    background-color: #9DD15D;
+    font-size: x-large;
+}
+kar{
+    display: none;
+}
+.kar:checked .content{
+    background-color: orange;
+    font-size: x-large;
+}
+gunes{
+    display: none;
+}
+.gunes:checked .content{
+    background-color: yellow;
+    font-size: x-large;
+}
+/*nav.navMenu ul{
+    list-style-type: none;
+    padding: 5px;
+    line-height: 2rem;
+    display: none;
+}
+nav.navMenu:hover ul{
+    display: block;
+    cursor: pointer;
+}*/

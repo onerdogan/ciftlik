@@ -1,0 +1,33 @@
+.icerik{
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    display:none;
+}
+
+.icerik li{
+    background-color: darkorange;
+    margin-bottom: 0px;
+    font-size: x-large;
+    text-align:left;
+padding-left: px;
+    color: white;
+}
+.icerik li::before{
+    content: "🍀";
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.icerik li:first-child{
+    background-color: brown;
+}
+
+.list{
+    font-size: x-large;
+}
+.list:active+ul.icerik{
+    display:block;
+    cursor: pointer;
+}
